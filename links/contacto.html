@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- María Luisa Fernández-Barredo Mingo
+LMSG02 Tarea Evaluativa 02
+Crea tu web
+Diciembre 2022
+Contacto -->
+<html lang="es">
+     <!-- Propiedades referidas a vínculos, idioma y título -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+        <title>Shiatsu en Bizkaia</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="fontawesome.min.css">
+    </head>
+    <!-- Cuerpo del html -->
+    <body>
+        <!-- Cabecera -->
+        <header>
+            <!-- Se crea un div para poder posicionar los distintos elementos -->
+            <div class="cabecera">
+                <p class="logo">Shiatsu Bizkaia</p>
+            <!-- Menú con etiqueta semántica para la navegación con rutas relativas -->
+            <nav class="menu">        
+                    <a href= "../index.html" class="menu-a">Inicio</a>
+                    <a href= "../links/para que sirve.html" class="menu-a">¿Qué te puede ofrecer?</a>
+                    <a href= "../links/tratamientos.html" class="menu-a">Tratamiento</a>
+                    <a href="../links/contacto.html" class="menu-a">Contacto</a>
+            </nav>
+            </div>
+            </header>
+            <!-- Se crea una sección para incluir la imagen que aparece debajo de la cabecera -->
+            <section class="s-logo">
+                <h1>SHIATSU BIZKAIA</h1>
+                <h2>Toma mejores decisiones</h2>
+            </section>
+        <!--Se incluye div para crear una clase y poder trabajar en el posicionamiento  -->
+        <div class="p-contacto">
+        <!-- Una sección con una lista para los datos de dirección y contacto -->
+        <section class="datos">
+            <h2>SHIATSU BIZKAIA</h2>
+            <p>Puedes usar estos datos para ponerte en contacto con nosotros</p>
+            <br>
+        <dl>
+            <dt>Dirección: </dt>
+            <dd>Bizkaia</dd>
+            <dt>Teléfonos</dt>
+            <dd>612.123.456</dd>
+            <dd>94.235.678.</dd>
+            <dt>WhatsApp</dt>
+            <dd>612.123.456</dd>
+            <dt>Correo</dt>
+            <dd>mfernandez-barredo@birt.eus</dd>
+            <dt>Web</dt>
+            <dd>Esta es nuestra web</dd>
+        </dl>
+        <br>
+            <p>También puedes enviarnos este formulario</p>
+        </section>
+        <!-- Sección para incluir el formulario de contacto, con sus claes para luego trabajar en ello. -->
+        <section class="contacto">
+            <form id="form" action="mailto:mfernandez-barredo@birt.eus" method="get" class="form">
+                <fieldset>
+                    <legend><h3>Consúltanos sin compromiso</h3></legend>
+                        <label for="fname">Nombre:</label><br>
+                        <input type="text" name="nombre" value="Nombre" class="input"><br>
+                        <label for="lname">Apellido:</label><br>
+                        <input type="text" name="apellido2" value="Apellido" class="input"><br>
+                        <label for="shi">Elige el shiatsu:</label><br>
+                        <select name="modulo" class="input">
+                        <option value="General">Shiatsu general</option>
+                        <option value="Facial">Shiatsu facial</option>
+                        <option value="Respiratorio">Shiatsu respiratorio</option>
+                        <option value="Otros">Otros tratamientos</option><br>
+                    </select>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </section>
+        </div>
+        <footer class="footer">
+            <p>&copy; Shiatsu Bizkaia</p>
+        </footer>
+    </body>
+    </html>

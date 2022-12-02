@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- María Luisa Fernández-Barredo Mingo
+LMSG02 Tarea Evaluativa 02
+Crea tu web
+Diciembre 2022
+Tratamientos -->
+<html lang="es">
+     <!-- Propiedades referidas a vínculos, idioma y título -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+        <title>Shiatsu en Bizkaia</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="fontawesome.min.css">
+    </head>
+    <!-- Cuerpo del html -->
+    <body>
+        <!-- Cabecera -->
+        <header>
+            <!-- Se crea un div para poder posicionar los distintos elementos -->
+            <div class="cabecera">
+                <p class="logo">Shiatsu Bizkaia</p>
+            <!-- Menú con etiqueta semántica para la navegación con rutas relativas -->
+            <nav class="menu">        
+                    <a href= "../index.html" class="menu-a">Inicio</a>
+                    <a href= "../links/para que sirve.html" class="menu-a">¿Qué te puede ofrecer?</a>
+                    <a href= "../links/tratamientos.html" class="menu-a">Tratamiento</a>
+                    <a href="../links/contacto.html" class="menu-a">Contacto</a>
+                    
+            </nav>
+            </div>
+        </header>
+            <!-- Se crea una sección para incluir la imagen que aparece debajo de la cabecera -->
+        <section class="s-logo">
+            <h1>SHIATSU BIZKAIA</h1>
+            <h2>Toma mejores decisiones</h2>
+        </section>
+        <!-- Sección para incluir los tratamientos que contendrá los respectivos artículos. -->
+        <section class="tratamientos">
+            <!--Este artículo contiene vínculo al ejemplo de sesión, tanto en la foto como en el texto-->
+            <article class="trat-art">
+                <a href="ejemplo sesion.html"><img src="../img/muscular.jpg" alt="Problemas musculares"> </a>
+                <p class="credito">Annie Spratt on Unsplash</p>
+                <h3>Shiatsu general</h3>
+                <p>Perfecto para una primera toma de contacto. Mejora tu estilo de vida.</p>
+                <p><a href="ejemplo sesion.html">Pincha para ver cómo será tu sesión</a></p>
+            </article>
+            <article class="trat-art">
+                <img src="../img/respiratorio.jpg" alt="Tratamiento Respiratorio">
+                <p class="credito">eberhard-grossgasteiger on unsplash</p>
+                <h3>Tratamiento respiratorio</h3>
+                <p>El shiatsu mejorará síntomas, así como ayudará a trabajar en las causas.</p>
+            </article>
+            <article class="trat-art">
+                <img src="../img/ninos.jpg" alt="Otros Tratamientos">
+                <p class="credito">louis hansel unsplash</p>
+                <h3>Otros tratamientos</h3>
+                <p>Trabaja en tu bienestar y en mantener tu salud.</p>
+            </article>
+        </section>
+        <footer class="footer">
+            <p>&copy; Shiatsu Bizkaia</p>
+        </footer>
+</html>

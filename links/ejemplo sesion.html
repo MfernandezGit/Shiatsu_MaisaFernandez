@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- María Luisa Fernández-Barredo Mingo
+LMSG02 Tarea Evaluativa 02
+Crea tu web
+Diciembre 2022
+Ejemplo Sesión -->
+<html lang="es">
+     <!-- Propiedades referidas a vínculos, idioma y título -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+        <title>Shiatsu en Bizkaia</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="fontawesome.min.css">
+    </head>
+    <!-- Cuerpo del html -->
+    <body>
+        <!-- Cabecera -->
+        <header>
+            <!-- Se crea un div para poder posicionar los distintos elementos -->
+            <div class="cabecera">
+                <p class="logo">Shiatsu Bizkaia</p>
+            <!-- Menú con etiqueta semántica para la navegación con rutas relativas -->
+            <nav class="menu">        
+                    <a href= "../index.html" class="menu-a">Inicio</a>
+                    <a href= "../links/para que sirve.html" class="menu-a">¿Qué te puede ofrecer?</a>
+                    <a href= "../links/tratamientos.html" class="menu-a">Tratamiento</a>
+                    <a href="../links/contacto.html" class="menu-a">Contacto</a>
+                    
+            </nav>
+            </div>
+        </header>
+        <!-- Se crea una sección para incluir la imagen que aparece debajo de la cabecera -->
+        <section class="s-logo">
+                <h1>SHIATSU BIZKAIA</h1>
+                <h2>Toma mejores decisiones</h2>
+        </section>
+        <!-- Se incluye un div para poder separar la explicación del resto del posicionamiento -->
+        <div>
+            <p class="explicacion">El primer día vente con ropa cómoda. Cuéntanos el motivo de tu visita. Te escucharemos. Trabajaremos en el suelo o en una silla, a través del contacto, rotaciones y estiramientos.</p>
+        </div> 
+        <!-- Etiqueta semántica que incluirá los artículos con las fotos de cada uno de las partes de la secuencia -->
+        <section class="ejemplo">
+            <article class="img-tratamiento">
+                <img src="../img/shiatsu_1.png" alt="Sesión de shiatsu" >
+                <p class="credito">wilfried rappenecker</p>
+            </article>
+            <article class="img-tratamiento">
+                <img src="../img/shiatsu_2.png" alt="Sesión de shiatsu">
+                <p class="credito">wilfried rappenecker</p>
+            </article>
+            <article class="img-tratamiento">
+                <img src="../img/shiatsu_3.png" alt="Sesión de shiatsu">
+                <p class="credito">wilfried rappenecker</p>
+            </article>
+            <article class="img-tratamiento">
+                <img src="../img/shiatsu_4.png" alt="Sesión de shiatsu">
+                <p class="credito">wilfried rappenecker</p>
+            </article>
+        </section>
+        <footer class="footer">
+            <p>&copy; Shiatsu Bizkaia</p>
+        </footer>
+    </body>    
+</html>

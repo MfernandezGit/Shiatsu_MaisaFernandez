@@ -1,0 +1,311 @@
+/* María Luisa Fernández-Barredo Mingo
+LMSG02 Tarea Evaluativa 02
+Crea tu web
+Diciembre 2022
+css Hoja de estilos */
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    }
+/* Estilos generales */
+body{
+    margin: 0;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif, serif, 'Droid Serif', 'Arimo', 'Montiel', 'Roboto';
+    background-color: #dfebe4;
+    box-sizing: border-box;
+    color: rgb(2, 88, 54);
+}
+/* posicionamiento fijo en la cabecera para que la posición final sea siempre la misma */
+header{
+    position: fixed;
+    width: 100%;
+}
+/* posicionamiento flexbox para colocar los elementos de la cabecera*/
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #dfebe4;
+    padding: 10px;
+    height: 90px;
+    align-items: flex-end;
+}
+.menu{   
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 25px 20px;
+    align-items: flex-end;
+}
+.logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bolder;  
+    color: rgb(2, 88, 54);
+    font-size: 1.5em;
+    align-items: flex-end;
+}
+/* Quitamos en el link el subrayado del vínculo e incluimos el color de la letra */
+.menu-a{
+        text-decoration: none;
+        color: rgb(2, 88, 54);
+    }
+    /* Propiedades para el momento en el que pasamos por encima del ratón */    
+    a:hover{
+        color: black;
+    }
+/* Propiedades para l imagen con su texto que se imprime debajo de la cabecera */ 
+.s-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: url(../img/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    text-align: center;
+    color: rgb(2, 88, 54);
+}
+/* Distintos tamaños de letra para los titulares */
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+/* En este caso es un id para el main */
+#principal{
+    background-color: #dfebe4;
+    color: rgb(2, 88, 54);
+    text-align: center;
+    padding: 200px;
+    margin: 0 auto;
+    padding: 20px; 
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-left: 20px;
+    align-items: flex-start;
+    justify-content: space-around; 
+    width: 90%;
+} 
+/* Propiedades para la sección del main que se dirige a dar información general */
+ .sobre{
+   flex-basis: 50%;
+   justify-content: baseline;
+   display: flex;
+   flex-direction: column;
+   align-content: space-between;
+} 
+.sobre, p{
+    justify-content: flex-end;
+}
+/* Propiedades para la sección del main que incluye un formulario de contcto */
+.contacto{
+    float: center; 
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+}
+    /* Propiedades del formulario*/
+    .form{
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px 30px;
+    }
+    .input{
+    width: 80%;
+    max-width: 500px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font: inherit;
+    border-radius: .6em;
+    }
+.footer{
+    background-color: #dfebe4;
+    color: rgb(2, 88, 54);
+}
+/* Propiedades de l página de tratamientos. Posicionamiento grid */
+.tratamientos{
+    margin: 20px;
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+	column-gap: 20px;
+    padding: 20 px;
+    background-color: #dfebe4;
+}
+.explicacion{
+    text-align: center;
+    color: rgb(2, 88, 54); 
+}
+/* Especificación para cada uno de los tratamientos */
+.trat-art{  
+    padding: 20px;
+    color: rgb(2, 88, 54);
+    text-align: center;
+}
+.credito{
+    font-size: 8px;
+}
+.trat-art a{
+    text-decoration: none;
+    color: rgb(2, 88, 54);
+}
+a:hover{
+    color: black;
+}
+/* Posicionamiento flex en la página de detalle del tratamiento */
+.ejemplo{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+.img-tratamiento{
+    flex: 1 1 auto;
+    width: 35%;
+    padding: 10px;
+    font-size: 8px;
+}
+/* Posicionamiento para la página Para qué sirve */
+.para{
+    display: flex;
+    padding: 20px 20px;
+}
+.para article h3 {
+    font-size: 20px;
+}
+/* Detalle para los vínculos */
+.para a{
+    text-decoration: none;
+    color: rgb(2, 88, 54);
+    font-weight: bold;
+}
+a:hover{
+    color: black;
+}
+/* Posicionamiento float para la imagen de la página para qué sirve */
+.float{
+    float: left;
+    padding-right: 20px;
+}
+.credito{
+    clear: both;
+}
+/* Se incluye una clase para centrar el texto */
+.centrar{
+    text-align: center;
+}
+aside p {
+    text-align: left;
+    padding: 10px 10px;
+}
+/* Propiedades de la página contacto. Posicionamento flexbox */
+.p-contacto{
+    background-color: #dfebe4;
+    color: rgb(2, 88, 54);
+    text-align: left;
+    padding: 200px;
+    margin: 0 auto;
+    padding: 20px; 
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-left: 20px;
+    align-items: flex-start;
+    justify-content: space-around; 
+    width: 90%;
+}
+/* Propiedades de la lista de los datos de dirección */
+dd, dt {
+    line-height: 2;
+  }
+  dt {
+    font-weight: bold;
+  }
+  /* POsicionamiento para la visión en móvil. Principalmente flexbox en columnas */
+  @media (max-width: 500px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabecera{
+        display: flex;
+        flex-direction: column;
+        align-items: column;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 25px;
+    }
+    .s-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+    }
+
+     .sobre{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contacto{
+        float: center; 
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        background-color: #dfebe4;
+    }
+
+    .tratamientos{
+        display:flex;
+        flex-direction: column;
+    }
+    .explicacion{
+        text-align: center;
+        color: rgb(2, 88, 54); 
+    }
+    
+    .ejemplo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .para{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+    
+    .p-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+}
